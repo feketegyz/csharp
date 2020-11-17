@@ -10,6 +10,8 @@ namespace Triangle
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Háromszögekkel kapcsolatos számítások");
+            Console.ReadKey();
         }
     }
 }

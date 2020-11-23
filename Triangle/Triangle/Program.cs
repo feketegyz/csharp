@@ -18,11 +18,27 @@ namespace Triangle
             int mb = 0;
             int mc = 0;
             int K = 0;
+            bool hiba = true;
 
             Console.WriteLine("Háromszögekkel kapcsolatos számítások");
             //Adatok bekérése
             Console.WriteLine("Add mega háromszög adatait");
-            a = int.Parse(Console.ReadLine());
+            Console.Write("a= ");
+            do
+            {
+                try
+                {
+                    a = int.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Számot várok");
+                    hiba = false;
+                }
+
+            } while (hiba);
+
+
             b = int.Parse(Console.ReadLine());
             c = int.Parse(Console.ReadLine());
 

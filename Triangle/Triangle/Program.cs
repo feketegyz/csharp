@@ -48,24 +48,6 @@ namespace Triangle
             else if ((a + c) < b) Console.WriteLine("Nincs ilyen háromszög");
             else if ((b + c) < a) Console.WriteLine("Nincs ilyen háromszög");
             else Console.WriteLine("Ez létező háromszög");
-            /*if ((a + b) < c)
-            {
-                Console.WriteLine("Nincs ilyen háromszög");
-                //    else
-            //}
-            if ((a + c) < b)
-            {
-                Console.WriteLine("Nincs ilyen háromszög");
-            }
-            if ((b + c) < a)
-            {
-                Console.WriteLine("Nincs ilyen háromszög");
-            }
-            else
-            {
-                Console.WriteLine("Ez létező háromszög");
-            }
-            }*/
 
             Console.WriteLine($"a= "+ a);
             Console.WriteLine($"b= " + b);

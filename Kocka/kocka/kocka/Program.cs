@@ -61,12 +61,12 @@ namespace kocka
                     }  // Elágazás vége
                 } // for ciklus vége
                 Console.WriteLine();
-                Console.WriteLine($"hatos  " + dobas6 + " db");
-                Console.WriteLine($"ötös   " + dobas5 + " db");
-                Console.WriteLine($"négyes " + dobas4 + " db");
-                Console.WriteLine($"hármas " + dobas3 + " db");
-                Console.WriteLine($"kettes " + dobas2 + " db");
-                Console.WriteLine($"egyes  " + dobas1 + " db");
+                Console.WriteLine($"hatos  " + dobas6 + " db   " + (dobas6 * 100 / dobdb) + " %");
+                Console.WriteLine($"ötös   " + dobas5 + " db   " + (dobas5 * 100 / dobdb) + " %");
+                Console.WriteLine($"négyes " + dobas4 + " db   " + (dobas4 * 100 / dobdb) + " %");
+                Console.WriteLine($"hármas " + dobas3 + " db   " + (dobas3 * 100 / dobdb) + " %");
+                Console.WriteLine($"kettes " + dobas2 + " db   " + (dobas2 * 100 / dobdb) + " %");
+                Console.WriteLine($"egyes  " + dobas1 + " db   " + (dobas1 * 100 / dobdb) + " %");
 
                 Console.WriteLine("Akarsz újabb szimulációt (y/n)");
                 kocka = char.Parse(Console.ReadLine());

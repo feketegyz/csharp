@@ -18,6 +18,7 @@ namespace Triangle
             int mb = 0;
             int mc = 0;
             int K = 0;
+            double T = 0;
             bool hiba = true;
 
             Console.WriteLine("Háromszögekkel kapcsolatos számítások");
@@ -48,12 +49,13 @@ namespace Triangle
             else if ((a + c) < b) Console.WriteLine("Nincs ilyen háromszög");
             else if ((b + c) < a) Console.WriteLine("Nincs ilyen háromszög");
             else Console.WriteLine("Ez létező háromszög");
-
+            K = a + b + c;
+            T = Math.Sqrt(K / 2 * (K / 2 - a) * (K / 2 - b) * (K / 2 - c));
             Console.WriteLine($"a= "+ a);
             Console.WriteLine($"b= " + b);
             Console.WriteLine($"c= " + c);
             Console.WriteLine($"K= " + ( a + b + c));
-            Console.WriteLine($"Terület= ");
+            Console.WriteLine($"Terület= " + T);
 
 
             Console.ReadKey();

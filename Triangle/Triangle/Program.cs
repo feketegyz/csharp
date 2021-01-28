@@ -53,7 +53,7 @@ namespace Triangle
             Console.WriteLine($"b= " + b);
             Console.WriteLine($"c= " + c);
             Console.WriteLine($"K= " + ( a + b + c));
-
+            Console.WriteLine($"Terület= ");
 
 
             Console.ReadKey();

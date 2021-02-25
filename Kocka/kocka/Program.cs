@@ -11,6 +11,7 @@ namespace kocka
         static void Main(string[] args)
 
         {
+            Console.WriteLine("Pénzfeldobás vagy kockadobás");
             char kocka = 'y';
             char ask = 'y';
 

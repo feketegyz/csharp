@@ -16,7 +16,10 @@ namespace Alapműveletek
             int[] szam1 = new int[10];
             int[] szam2 = new int[10];
             int[] szum = new int[10];
-            int jo = 0;
+            int szumjo = 0;
+            int[] dif = new int[10];
+            int difjo = 0;
+
 
             for (int i = 0; i < 5; i++)
             {
@@ -29,13 +32,13 @@ namespace Alapműveletek
                 if (szam1[i] + szam2[i] == szum[i])
                 {
                     //Console.WriteLine("  helyes");
-                    jo++;
+                    szumjo++;
                 }
 
             }
             //for(int i = 0; i < 9; i++)
 
-            Console.WriteLine($"10-ből " + jo + " jó");
+            Console.WriteLine($"10-ből " + szumjo + " jó");
             Console.ReadKey();
         }
     }

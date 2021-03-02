@@ -29,16 +29,26 @@ namespace Alapműveletek
                 Console.Write(szam1[i] + "+" + szam2[i] + "= ");
                 szum[i] = int.Parse(Console.ReadLine());
                 //Console.Write(szam1[i]+szam2[i]);
+                Console.Write(szam1[i] + "-" + szam2[i] + "= ");
+                dif[i] = int.Parse(Console.ReadLine());
+                //Console.Write(szam1[i]+szam2[i]);
+
                 if (szam1[i] + szam2[i] == szum[i])
                 {
                     //Console.WriteLine("  helyes");
                     szumjo++;
+                }
+                if (szam1[i] - szam2[i] == dif[i])
+                {
+                    //Console.WriteLine("  helyes");
+                    difjo++;
                 }
 
             }
             //for(int i = 0; i < 9; i++)
 
             Console.WriteLine($"10-ből " + szumjo + " jó");
+            Console.WriteLine($"10-ből " + difjo + " jó");
             Console.ReadKey();
         }
     }
